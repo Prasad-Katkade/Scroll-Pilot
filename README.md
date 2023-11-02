@@ -1,6 +1,6 @@
-# Scroll Nav & Indicator
+# ScrollPilot : Scroll Nav & Indicator
 
-Scroll Nav Indicator is a React.js library designed to enhance web page accessibility. It provides a scroll indicator that visualizes how much a user has scrolled and offers easy navigation options for moving between sections on a web page.
+ScrollPilot is a React.js library designed to enhance web page accessibility. It provides a scroll indicator that visualizes how much a user has scrolled and offers easy navigation options for moving between sections on a web page.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -11,6 +11,10 @@ Scroll Nav Indicator is a React.js library designed to enhance web page accessib
 - **Customization:** Customize the component to match your website's design and requirements.
 - **Built on React.js and Material-UI:** Utilizes the power of React.js and Material-UI for seamless integration into your web projects.
 
+<div style="display: flex; flex-direction: row;">
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/41871409/279931611-7dd9f03c-8982-4509-9cc6-c3fa72db3e4f.gif" width="200" />
+</div>
+
 ## Demo 
 <a href="https://stackblitz.com/edit/react-crvshm?file=src%2FApp.js" target="_blank">Live Demo [Stackblitz] </a>
 
@@ -19,7 +23,7 @@ Scroll Nav Indicator is a React.js library designed to enhance web page accessib
 You can install the Scroll Nav Indicator library using npm:
 
 ```sh
-npm install scroll-nav-indicator
+npm i scroll-pilot
 ```
 
 ## How to use ?
@@ -27,7 +31,7 @@ npm install scroll-nav-indicator
 Simply import the **ScrollPilot** from **scroll-nav-indicator**
 
 ```jsx static
-import { ScrollPilot } from 'scroll-nav-indicator';
+import { ScrollPilot } from 'scroll-pilot';
 
 function App() {
   return (
@@ -111,7 +115,7 @@ html {
 | icon                      | HTML Content          | <>Hi !</>     | Displays provided HTML content (e.g., text, images, SVG, and icons) at the center of the indicator. |
 | location                  | String                |"bottom-right" | Applies position to indicator, you can specify any value between these <br>1] top-left <br>2] top-right <br>3] bottom-left <br>4] bottom-right |
 | tooltipTxt                | String                | " "           | Shows the given tooltip text on hover over the indicator. |
-| size                      | Number or String      | 50            | The size of the indicator. You can specify it as a number with a pixel unit or as a string with a CSS unit (e.g., '3rem'). |
+| size                      | Number       | 50            | The size of the indicator. The position of nav popup is  calculate with size + margin value |
 | hideOnScroll              | Boolean               | True          | Hides the indicator while the user is scrolling. |
 | indicatorBackgroundColor   | String                | #FFFFFF       | Changes the background color of the indicator. |
 | indicatorProgressColor    | String                | #181818       | Changes the circular progress color of the indicator. |
