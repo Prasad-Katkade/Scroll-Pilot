@@ -11,6 +11,9 @@ Scroll Nav Indicator is a React.js library designed to enhance web page accessib
 - **Customization:** Customize the component to match your website's design and requirements.
 - **Built on React.js and Material-UI:** Utilizes the power of React.js and Material-UI for seamless integration into your web projects.
 
+## Demo 
+<a href="https://stackblitz.com/edit/react-crvshm?file=src%2FApp.js" target="_blank">Live Demo [Stackblitz] </a>
+
 ## Installation
 
 You can install the Scroll Nav Indicator library using npm:
@@ -91,6 +94,12 @@ function App() {
   );
 }
 ```
+You can add this line in the **index.css** file to **enable smooth scrolling**
+```css static
+html {
+  scroll-behavior: smooth;
+}
+```
 
 ## Configuration Details
 
@@ -110,4 +119,30 @@ function App() {
 | popupWidths               | Object {desktop, mobile} | {desktop: "200px", mobile: "180px"} | Sets the width of the navigation popup. Desktop and mobile attributes are provided to maintain width based on devices. |
 | popupBackgroundColor       | String                | #FFFFFF       | Changes the background color of the navigation popup. |
 | popupLinksColor           | String                | #181818       | Changes the color of navigation links inside the popup. |
+
+## How to run locally ?
+
+If you wish to contribute in repositiory, setup the dev-environment in following way
+
+1] Clone the project   
+```
+git clone https://github.com/Prasad-Katkade/Scroll-Pilot
+```
+
+2] Install dependancies using NPM 
+```
+npm install
+```
+
+3] Start Coding !
+
+``
+Note: I plan to integrate Storybook for testing the component in the upcoming future. Until then, you can copy the component into a React project and test it accordingly.
+``
+
+## Support 
+Open for remote work opportunity ! Connect with me here 
+- [LinkedIn](https://www.linkedin.com/in/prasad-katkade/)
+- [Twitter](https://twitter.com/_prasadd_)
+- [Portfolio](https://prasadd-portfolio.netlify.app/)
 

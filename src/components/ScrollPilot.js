@@ -52,7 +52,10 @@ export const ScrollPilot = ({ config }) => {
   }
 
   const isDataTypeValid=(value,type)=>{
-    return typeof value?.mobile === type && typeof value?.desktop === type
+    if(typeof value == "object")
+      return typeof value?.mobile === type && typeof value?.desktop === type
+    else
+      return typeof value === type
   }
 
   const mergedConfig = {
@@ -61,6 +64,7 @@ export const ScrollPilot = ({ config }) => {
     aesthetics: {
       ...defaultConfig.aesthetics,
       ...config?.aesthetics,
+      size:isDataTypeValid(config?.aesthetics?.size,"number") ? config?.aesthetics?.size : defaultConfig.aesthetics.size ,
       location: isValidLocation( config?.aesthetics?.location) ? config?.aesthetics?.location : defaultConfig.aesthetics.location ,
       margins:isDataTypeValid(config?.aesthetics?.margins,"number") ? config?.aesthetics?.margins : defaultConfig.aesthetics.margins 
     },
