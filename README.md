@@ -20,7 +20,7 @@ ScrollPilot is a React.js library designed to enhance web page accessibility. It
 
 ## Installation
 
-You can install the Scroll Nav Indicator library using npm:
+You can install the ScrollPilot library using npm:
 
 ```sh
 npm i scroll-pilot
@@ -28,7 +28,7 @@ npm i scroll-pilot
 
 ## How to use ?
 
-Simply import the **ScrollPilot** from **scroll-nav-indicator**
+Simply import the **ScrollPilot** from **ScrollPilot**
 
 ```jsx static
 import { ScrollPilot } from 'scroll-pilot';

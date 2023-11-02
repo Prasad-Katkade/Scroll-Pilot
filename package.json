@@ -1,6 +1,6 @@
 {
   "name": "scroll-pilot",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple React.js library that improves the accessibility of a web page. It includes a scroll indicator that tracks the user's scrolling progress and provides easy navigation options for moving between sections.",
   "homepage": "https://github.com/Prasad-Katkade/Scroll-Pilot",
   "main": "dist/index.js",
