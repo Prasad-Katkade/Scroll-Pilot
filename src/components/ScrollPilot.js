@@ -100,8 +100,8 @@ export const ScrollPilot = ({ config }) => {
           [pos[0]]: { xs: `${margins?.mobile + "px"}`, sm: margins?.desktop + "px" },
           [pos[1]]: { xs: margins?.mobile + "px", sm: margins?.desktop + "px" },
         }
-      : { [pos[0]]: { xs: margins?.mobile + 50 + "px", sm: margins?.desktop + 50 + "px" }, 
-          [pos[1]]: { xs: margins?.mobile + 50 + "px", sm: margins?.desktop + 50 + "px" } 
+      : { [pos[0]]: { xs: margins?.mobile + size + "px", sm: margins?.desktop + size + "px" }, 
+          [pos[1]]: { xs: margins?.mobile + size + "px", sm: margins?.desktop + size + "px" } 
         };
   };
 
